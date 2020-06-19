@@ -101,7 +101,7 @@
                             </asp:LinkButton>
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">
-                                Book Issuing
+                                Book Checkout
                             </asp:LinkButton>
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server">
