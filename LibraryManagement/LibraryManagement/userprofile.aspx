@@ -1,13 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="LibraryManagement.signup" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="userprofile.aspx.cs" Inherits="LibraryManagement.userprofile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
+
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 mx-auto">
+
+            <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
+
+
                         <div class="row">
                             <div class="col">
                                 <center>
@@ -15,13 +19,19 @@
                                 </center>
                             </div>
                         </div>
+
+
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h4>Member Sign Up</h4>
+                                    <h4>Your Profile</h4>
+                                    <span>Acount Status - </span>
+                                    <asp:Label ID="Label1" class="badge badge-pill badge-info" runat="server" Text="Active"></asp:Label>
                                 </center>
                             </div>
                         </div>
+
+
                         <div class="row">
                             <div class="col">
                                 <center>
@@ -29,6 +39,7 @@
                                 </center>
                             </div>
                         </div>
+
 
                         <div class="row">
                             <div class="col-md-6">
@@ -82,7 +93,6 @@
                                     </asp:TextBox>
                                 </div>
                             </div>
-
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Pin</label>
@@ -91,6 +101,7 @@
                                 </div>
                             </div>
                         </div>
+
 
                         <div class="row">
                             <div class="col">
@@ -102,6 +113,7 @@
                             </div>
                         </div>
 
+
                         <div class="row">
                             <center>
                                 <h2>Login Information</h2>
@@ -110,34 +122,82 @@
 
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Username</label>
-                                    <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="Username">
+                                    <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="Username" ReadOnly="true">
                                     </asp:TextBox>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" TextMode="Password" placeholder="Password">
+                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" TextMode="Password" placeholder="Old Password" ReadOnly="true">
                                     </asp:TextBox>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Password</label>
+                                <asp:TextBox class="form-control" ID="TextBox10" runat="server" TextMode="Password" placeholder="New Password">
+                                </asp:TextBox>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="form-group">
-                            <button id="Button2" class="btn btn-info btn-block btn-lg" href="signup.aspx">
-                                Sign Up
-                            </button>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <center>
+                            <div class="form-group">
+                                <button id="Button2" class="btn btn-success btn-block btn-lg" href="signup.aspx">
+                                    Update Profile
+                                </button>
+                            </div>
+                            </center>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <a href="home.aspx"><< Back to Home</a>
-    <br />
-    <br />
 
+        <div class="col-md-7">
+            <div class="card-body">
+
+
+                <div class="row">
+                    <div class="col">
+                        <center>
+                        <img src="imgs/books1.png" width="100px"/>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <center>
+                        <h4></h4>
+                        </center>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <center>
+                         <asp:Label ID="Label2" class="badge badge-pill badge-info" runat="server" Text="Your Books"></asp:Label>
+                         </center>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <asp:GridView ID="GridView1" class="table table-dark table-hover table-bordered" runat="server"></asp:GridView>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </asp:Content>
