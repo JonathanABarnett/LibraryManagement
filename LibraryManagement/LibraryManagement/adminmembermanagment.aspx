@@ -111,8 +111,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label>
-                                        Mailing Address/label>
+                                    <label>Mailing Address</label>
                                     <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Address" ReadOnly="true" TextMode="MultiLine" Rows="2"></asp:TextBox>
                                 </div>
                             </div>
