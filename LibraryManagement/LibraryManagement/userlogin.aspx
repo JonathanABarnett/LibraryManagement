@@ -32,7 +32,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="Member ID">
+                                    <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="Username">
 
                                     </asp:TextBox>
                                 </div>

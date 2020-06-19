@@ -31,7 +31,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="Admin ID">
+                                    <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="Admin Username">
 
                                     </asp:TextBox>
                                 </div>
