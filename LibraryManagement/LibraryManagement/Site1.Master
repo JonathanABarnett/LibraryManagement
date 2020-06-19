@@ -88,7 +88,7 @@
                                 Admin Login
                             </asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server"                              >
+                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">
                                 Author Management
                             </asp:LinkButton>
                             &nbsp;
@@ -110,17 +110,19 @@
                         </p>
                     </div>
                 </div>
-                <div id="footer2" class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                            <p style="color: whitesmoke">
-                                &copy All Rights Reserved. <a
-                                    class="footerlinks" href="#" target="_blank">Jonathan Barnett</a>
-                            </p>
-                        </div>
+            </div>
+
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color: whitesmoke">
+                            &copy All Rights Reserved. <a
+                                class="footerlinks" href="#" target="_blank">Jonathan Barnett</a>
+                        </p>
                     </div>
                 </div>
             </div>
+
         </footer>
     </form>
 </body>
