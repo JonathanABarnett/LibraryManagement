@@ -115,9 +115,11 @@
 
 
                         <div class="row">
+                            <div class="col">
                             <center>
                                 <h2>Login Information</h2>
                             </center>
+                                </div>
                         </div>
 
 
@@ -136,67 +138,70 @@
                                     </asp:TextBox>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Password</label>
-                                <asp:TextBox class="form-control" ID="TextBox10" runat="server" TextMode="Password" placeholder="New Password">
-                                </asp:TextBox>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <asp:TextBox class="form-control" ID="TextBox10" runat="server" TextMode="Password" placeholder="New Password">
+                                    </asp:TextBox>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-8 mx-auto">
-                            <center>
+                        <div class="row">
+                            <div class="col-8 mx-auto">
+                                <center>
                             <div class="form-group">
                                 <button id="Button2" class="btn btn-success btn-block btn-lg" href="signup.aspx">
                                     Update Profile
                                 </button>
                             </div>
                             </center>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-md-7">
-            <div class="card-body">
 
 
-                <div class="row">
-                    <div class="col">
-                        <center>
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-body">
+
+
+                        <div class="row">
+                            <div class="col">
+                                <center>
                         <img src="imgs/books1.png" width="100px"/>
                         </center>
-                    </div>
-                </div>
+                            </div>
+                        </div>
 
-                <div class="row">
-                    <div class="col">
-                        <center>
-                        <h4></h4>
+                        <div class="row">
+                            <div class="col">
+                                <center>
+                        <h4>Book Activity</h4>
                         </center>
-                    </div>
-                </div>
+                            </div>
+                        </div>
 
 
-                <div class="row">
-                    <div class="col">
-                        <center>
+                        <div class="row">
+                            <div class="col">
+                                <center>
                          <asp:Label ID="Label2" class="badge badge-pill badge-info" runat="server" Text="Your Books"></asp:Label>
                          </center>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <asp:GridView ID="GridView1" class="table table-dark table-hover table-bordered" runat="server"></asp:GridView>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-
-                <div class="row">
-                    <div class="col">
-                        <asp:GridView ID="GridView1" class="table table-dark table-hover table-bordered" runat="server"></asp:GridView>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
