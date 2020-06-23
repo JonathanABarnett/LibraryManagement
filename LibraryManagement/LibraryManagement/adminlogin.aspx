@@ -31,19 +31,17 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="Admin Username">
+                                    <asp:TextBox class="form-control" ID="username_text_box" runat="server" placeholder="Admin Username">
 
                                     </asp:TextBox>
                                 </div>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password">
+                                    <asp:TextBox class="form-control" ID="password_text_box" runat="server" placeholder="Password" TextMode="Password">
 
                                     </asp:TextBox>
                                 </div>
                                 <div class="form-group">
-                                    <button id="Button1" class="btn btn-success btn-block btn-lg">
-                                        Login
-                                    </button>
+                                    <asp:Button ID="Button2" runat="server" Text="Login" class="btn btn-success btn-block btn-lg" OnClick="Button2_Click" />
                                 </div>
                             </div>
                         </div>

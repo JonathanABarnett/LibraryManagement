@@ -15,8 +15,6 @@ namespace LibraryManagement
 
         private string connection = ConfigurationManager.ConnectionStrings["library_management"].ConnectionString;
 
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
 

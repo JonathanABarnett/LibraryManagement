@@ -4,6 +4,8 @@
 
 <html>
 <head runat="server">
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+
     <title></title>
     <%-- Bootstrap CSS --%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -11,15 +13,7 @@
     <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%-- Fontawesome CSS --%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
-    <%-- Custom CSS --%>\
-    <link href="css/customstylesheet.css" rel="stylesheet" />
-
-    <%-- JQuery --%>
-    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-    <%-- Popper JS --%>
-    <script src="bootstrap/js/popper.min.js"></script>
-    <%-- Bootstrap JS --%>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <%-- Custom CSS --%>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -62,7 +56,7 @@
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server"
-                                Visible="false">Logout</asp:LinkButton>
+                                Visible="false" OnClick="LinkButton3_Click">Logout</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server" Visible="False">Hello User</asp:LinkButton>
